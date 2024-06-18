@@ -1,6 +1,12 @@
 <?php
 
-//require './../vendor/autoload.php';
+require './../vendor/autoload.php';
+
+//use \Colors\RandomColor;
+
+use Router\Router;
+
+
 
 $routeur = new Router;
 
