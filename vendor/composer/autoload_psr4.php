@@ -6,5 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Router\\' => array($baseDir . '/Router'),
     'Colors\\' => array($vendorDir . '/mistic100/randomcolor/src'),
+    'Class\\' => array($baseDir . '/Class'),
 );
