@@ -18,9 +18,9 @@ $router->register('/contact', function () {
     return 'Contact Page ';
 });
 
-
-echo '<pre>';
-var_dump($router);
-echo '</pre>';
 // on doit également faire une methode resolve ou run pour resoudre tout les pb de root
-//$router->resolve();
+echo '<pre>';
+var_dump($_SERVER['REQUEST_URI']); //superGlobal sur laquelle on peut faire un explode avec le ? pour eviter les argu passés : explode ('?', $_SERVER['REQUEST_URI']))
+echo '</pre>';
+
+$router->resolve($_SERVER['REQUEST_URI']);
