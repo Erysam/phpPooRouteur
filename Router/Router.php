@@ -13,4 +13,10 @@ class Router
     {
         $this->routes[$path] = $action;
     }
+
+    public function resolve(string $uri)
+    {
+        $path = explode('?', $uri)[0]; //la 1er clé sera tjrs la bonne
+        $action = $this->routes[$path] ?? null; //??null ets un ternaire : $message = ($age >= 18) ? 'Vous êtes majeur.' : 'Vous êtes mineur.';
+    }
 }
