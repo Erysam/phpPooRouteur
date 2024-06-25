@@ -4,6 +4,8 @@
     },
     "autoload": {
         "psr-4": {
+            "Exceptions\\": "Exceptions/",
+            "Controllers\\": "Controllers/",
             "Router\\": "Router/",
             "Class\\": "Class/"
         }
