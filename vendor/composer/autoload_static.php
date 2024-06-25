@@ -11,8 +11,13 @@ class ComposerStaticInit1316065efaf7353c5fb2b57bfae8f8fb
         array (
             'Router\\' => 7,
         ),
+        'E' => 
+        array (
+            'Exceptions\\' => 11,
+        ),
         'C' => 
         array (
+            'Controllers\\' => 12,
             'Colors\\' => 7,
             'Class\\' => 6,
         ),
@@ -22,6 +27,14 @@ class ComposerStaticInit1316065efaf7353c5fb2b57bfae8f8fb
         'Router\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Router',
+        ),
+        'Exceptions\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Exceptions',
+        ),
+        'Controllers\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Controllers',
         ),
         'Colors\\' => 
         array (

@@ -7,6 +7,8 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Router\\' => array($baseDir . '/Router'),
+    'Exceptions\\' => array($baseDir . '/Exceptions'),
+    'Controllers\\' => array($baseDir . '/Controllers'),
     'Colors\\' => array($vendorDir . '/mistic100/randomcolor/src'),
     'Class\\' => array($baseDir . '/Class'),
 );
