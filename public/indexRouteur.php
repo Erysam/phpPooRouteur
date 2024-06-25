@@ -1,5 +1,6 @@
 <?php
 
+use Exceptions\RouteNotFoundException;
 use Router\Router;
 
 
@@ -23,4 +24,9 @@ echo '<pre>';
 var_dump($_SERVER['REQUEST_URI']); //superGlobal sur laquelle on peut faire un explode avec le ? pour eviter les argu passés : explode ('?', $_SERVER['REQUEST_URI']))
 echo '</pre>';
 
-$router->resolve($_SERVER['REQUEST_URI']);
+
+try {
+    $router->resolve($_SERVER['REQUEST_URI']);
+} catch (RouteNotFoundException $e) {
+    echo $e->getMessage();
+}
